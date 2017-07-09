@@ -10,4 +10,8 @@ import UIKit
 
 class BoardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
+
+    override func prepareForReuse() {
+        label.text = ""
+    }
 }
